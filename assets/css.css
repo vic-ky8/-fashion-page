@@ -1,0 +1,623 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */ 
+header {
+    width: 80%;
+    height: 95vh;
+    /*border: 1px solid brown;*/
+    margin: auto;
+}
+header nav{
+    width: 93%;
+    height: 12%;
+    border: 1px solid transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav .image{
+    display: flex;
+}
+header nav ul li a{
+    text-decoration: none; 
+    color: rgb(19, 18, 14);
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+header nav ul li{
+    padding: 3px 15px;
+}
+
+header nav ul li:nth-last-child(1){
+    background-color: rgb(79, 70, 95);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+header .navbar ul li:nth-last-child(1) a{
+    color: rgb(236, 229, 229);
+}
+header nav ul li a:hover{
+    color: gold;
+}
+header .content{
+    position: relative;
+    width: 100%;
+    height: 95%;
+   /* border: 1px solid black;*/
+    border-radius: 20px;
+   background: url(./asoebi/imagesvv1.jpg) no-repeat;
+   background-size: cover;
+   background-position: fixed;
+    
+} 
+header .content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid #000;*/
+    border-radius: 20px;
+    z-index: -1;
+}
+header .content .mainbox button{
+    background: rgb(77, 74, 74);
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /*border: 2px solid black;*/
+    color: rgb(24, 14, 1);
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+    border: none;
+}
+
+header .content .mainbox button:hover{
+    background: rgb(247, 171, 224);
+   /* border: 2px solid rgb(231, 142, 142);*/
+}
+header .content .mainbox{
+    width: 500px;
+    height: auto;
+    color: rgb(133, 130, 163);
+    padding: 30px;
+
+}
+
+header .content .mainbox h1{
+    line-height: 40px;
+    font-weight: 800;
+    /*border: 1px solid transparent;*/
+}
+
+header .content .mainbox p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(104, 86, 6);
+}
+header .trip_bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  /* border: 1px solid rgb(17, 16, 16);*/
+}
+
+header .trip_bx .searchbx{
+    position: absolute;
+    left: 2.5%;
+    width: 65%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 8px;
+    z-index: 1;
+    padding: 0px 20px;
+    box-shadow: 0px 20px 25px -10px #000;
+}
+
+header .trip_bx .searchbx .card{
+    width: 200px;
+    height: auto;
+  border: 1px solid transparent;    
+}
+header .trip_bx .searchbx .card h4{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+header .trip_bx .searchbx .card h4 .bi{
+    position: absolute;
+    font-size: 13px;
+    margin: 2px 0px 0px 5px;
+    transition: .3s linear;
+    
+}
+header .trip_bx .searchbx .card input{
+    margin-top: 3px;
+    
+    padding: 5px 0px;
+    border: none;
+    outline:none;
+    font-size: 13px;
+}
+header .trip_bx .searchbx  input[type="button"]{
+    background: black;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+header .trip_bx .searchbx  input[type="button"]:hover{
+    background: gray;
+}
+header .trip_bx .fashion{
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    top: 20px;
+
+   /* border: 1px solid #000;*/
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 20px 25px -10px #000;
+}
+header .trip_bx .fashion::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: whitesmoke;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header .trip_bx .fashion h4{
+    margin: 0;
+    padding: 60px 0px 15px 1.7%;
+}
+header .trip_bx .fashion .cards{
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .trip_bx .fashion .cards .card{
+    width: 220px;
+    height: 200px;
+    border: 1px solid transparent;
+}
+header .trip_bx .fashion .cards .card h3{
+    margin: 0px 0px 10px  0px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+header .trip_bx .fashion .cards .card h3 img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+header .trip_bx .fashion .cards .card  img{
+    width: 100%;
+    height: 70%;
+}
+header .trip_bx .fashion .cards .card  .btncity{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   /*border: 1px solid #000;*/
+}
+header .trip_bx .fashion .cards .card .btncity a{
+   text-decoration: none;
+   background: #000;
+   color: aliceblue;
+   border-radius: 20px;
+   padding: 6px 20px; 
+   font-size: 11px;
+   transition: .3s linear;
+}
+header .trip_bx .fashion .cards .card .btncity a:hover{
+    background: gray;
+}
+header .trip_bx .fashion .cards .card  .btncity h5{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+header .trip_bx .fashion .cards .card  .btncity span{
+    font-size: 13px;
+    font-weight: 700;   
+}
+.offers{
+    width: 80%;
+    height: auto;
+   /*border: 1px solid #000;*/
+    margin: auto;
+    margin-top: 150px;
+    transition: .5s linear;
+}
+.offers h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+.offers p{
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+.offers .cards{
+    margin-top: 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+   /* border: 1px solid black;*/
+    flex-wrap: wrap;
+}
+.offers .cards .card{
+    position: relative;
+    width: 200px;
+    height: 350px;
+    border: 1px solid transparent;
+    margin: 2px;
+}
+.offers .cards .card h3{
+    width: 140px;
+    padding: 6px 0px;
+    background: aquamarine;
+    border-radius: 20px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;margin-left: 15%;
+}
+.offers .cards .card .imgtext{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 5px;
+}
+.offers .cards .card .imgtext img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.offers .cards .card .imgtext h4{
+    position: absolute;
+    font-size: 9px;
+    padding: 10px 15px;
+    bottom: 0;
+    margin: 0;
+    color: azure;
+    z-index: 2 ;
+    
+}
+.offers .cards .card .imgtext h4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(82, 81, 81);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+.offers .cards .card  .contbx{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   /* border: 1px solid rgb(211, 209, 209);*/
+    padding: 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+.offers .cards .card  .contbx .price , .days{
+    margin: 0px 8px;
+}
+.offers .cards .card .contbx .price .heartchat{
+    display: flex;
+    align-items: center;
+}    
+.offers .cards .card  .contbx .price .heartchat i:nth-last-child(1){
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+}    
+.offers .cards .card .contbx .price .heartchat i span{
+    color: rgb(12, 11, 11);
+    font-size: 12px;
+    margin-right: 3px;
+    font-style: normal;
+}
+.offers .cards .card .contbx .price .heartchat i:nth-last-child(2){
+    color: rgb(115, 187, 230);
+    font-size: 13px;
+    margin-right: 10px;
+}
+.offers .cards .card  .contbx .price .infoprice{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.offers .cards .card .contbx .price .infoprice a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s linear;
+    margin-right: 13px;
+}
+.offers .cards .card  .contbx .price .infoprice a:hover{
+    color: grey;
+}
+.offers .cards .card  .contbx .price .infoprice h4{
+    margin: 0;
+    font-size: 13px;
+}
+.offers .cards .card .contbx .days{
+    color: aliceblue;
+    background: #000;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.offers .cards .card .contbx .days{
+    transform: rotate(360deg);
+}
+.carousel-inner{
+    width: auto;
+    height: auto;
+    margin: 30px 20px 20px 10px;
+}
+
+.destination{
+    width: 45%;
+    height: auto;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.destination .desbx ,.imgbx{
+    position: relative;
+    width: 50%;
+    height: auto;
+   /*border: 1px solid #000;*/
+}
+.destination .desbx h4{
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    line-height: 10px;
+    letter-spacing: 1px;
+}
+.destination .desbx p{
+    font-size: 12px;
+}
+.destination .desbx li{
+    list-style: none;
+    padding: 0px 0px 8px 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.destination .desbx h6{
+   width: 250px; 
+   font-size: 12px;
+   font-weight: 500;
+   margin: 20px 0px;
+}
+.destination .desbx button{
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #000;
+    color: aliceblue;
+   /*border: 2px solid #000;*/
+    cursor: pointer;
+    transition: .3s linear;
+}
+.destination .desbx button:hover{
+    background: gray;
+   /* border: 2px solid rgb(139, 134, 134);*/
+}
+.aboutme{
+    width: 50%;
+    height: auto;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme .myself{
+    background-color: #000;
+    border-radius: 35px;
+}
+.aboutme .myself img{
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+  
+}
+.aboutme .details{
+    position: relative;
+    margin: 20px 0px;
+    top: 60%;
+    left: -10%;
+    width: 250px;
+    height: 400px;
+    background: rgb(151, 147, 147);
+    box-shadow: 0px 5px 20px gray;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 40%;
+}
+.aboutme .details h2{
+    padding: 25px 5px;  
+}
+.aboutme .details button{
+    margin-top: 10%;
+    background: black;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.aboutme .details button:hover{
+    background: hotpink;
+}
+.destination .imgbx img{
+    width: 100%;
+    height: 420px;
+    border-radius: 25px;
+}
+.destination .imgbx .msg{
+    position: absolute;
+    top: 60%;
+    left: -10%;
+    width: 163px;
+    height: 47px;
+    background: white;
+    box-shadow: 0px 5px 20px gray;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.destination .imgbx .msg:nth-child(2){
+    top: 10%;
+    left: 60%;
+}
+.destination .imgbx .msg img{
+   width: 30px; 
+   height: 55%;
+}
+.destination .imgbx .msg .cont{
+    margin-left: 15px;
+}
+.destination .imgbx .msg .cont h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+.destination .imgbx .msg .cont .bi:nth-last-child(1){
+    color: red;
+    margin-right: 3px;
+    font-size: 13px;
+}
+.destination .imgbx .msg .cont .bi:nth-last-child(1) span{
+    font-style: normal;
+    margin-left: 3px;
+    font-size: 10px;
+    color: gray;
+}
+.destination .imgbx .msg .cont .bi:nth-last-child(2){
+    color: rgb(182, 224, 230);
+    margin-right: 5px;
+    font-size: 13px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: rgb(249, 249, 255);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+footer p{
+    text-align: center;
+    width: 400px;
+    font-size: 13px;
+}
+footer .input{
+    box-shadow: 0px 3px 20px -1px gray;
+    border-radius: 20px;
+}
+footer .input input{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 20px 0px 0px 20px;
+    
+} 
+footer .input button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+    color: aliceblue;
+    cursor: pointer;
+    transition: .3s linear;
+} 
+footer .input button:hover{
+    background: grey;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    /*align-items: center;*/
+    margin-top: 30px;
+}
+footer ul li{
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+footer ul li h6{
+    font-size: 11px;
+    font-weight: 600;
+    max-width: 120px;
+    margin: 0;
+    line-height: 18px;
+    border-top: 1px solid #000;
+    padding-top: 3px;
+
+}
